@@ -1,0 +1,80 @@
+.pdfInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: calc(100% - 10px);
+    height: 30px;
+    margin: 0 10px 0px 10px;
+    border-radius: 4px;
+}
+
+.pdfRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.pdfRow:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pdfCheckbox {
+    width: 20px;
+    height: 20px;
+}
+
+.pdfInput {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.pdfInput:focus {
+    border-color: #007bff;
+}
+
+.viewPdfLink {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.viewPdfLink:hover {
+    background-color: #f0f0f0;
+}
+
+.actionBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border: none;
+    background: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.actionBtn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Para el botón de eliminar, podemos agregar un color rojo al hover */
+.actionBtn[title="delete"]:hover {
+    background-color: #ffebee;
+}
+
+/* Para el botón de chat, podemos agregar un color azul al hover */
+.actionBtn[title="Chat sobre PDF"]:hover {
+    background-color: #e3f2fd;
+}
